@@ -1,0 +1,46 @@
+:root {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: dark;
+  
+  /* Variabel Warna Global */
+  --bg-dark: #0f172a;       /* Latar Belakang Utama */
+  --bg-card: #1e293b;       /* Latar Kartu */
+  --bg-input: #334155;      /* Latar Input */
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --border: #334155;
+  
+  --accent-bit: #38bdf8;    /* Biru Langit untuk Bit */
+  --accent-regex: #34d399;  /* Hijau Neon untuk Regex */
+  --error: #f87171;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Scrollbar cantik */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-dark); 
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border); 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary); 
+}
